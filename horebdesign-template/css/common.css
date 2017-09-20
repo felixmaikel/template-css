@@ -1,0 +1,14 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-image: url('../images/bg.png');
+	background-repeat: repeat;
+}
+
+.container {
+	margin: 0 auto;
+	width: 90%;
+}
