@@ -35,9 +35,15 @@ nav>ul>li>a {
 	font-weight: bold;
 	letter-spacing: 1px;
 	color: #555;
+	margin-left: 2px;
 }
 
 nav>ul>li>a:hover, .active {
+	background-color: #555;
+	color: #FFF;
+}
+
+nav>ul>li>a:after {
 	background-color: #555;
 	color: #FFF;
 }
@@ -49,15 +55,20 @@ nav>ul>li:hover>ul {
 .sub-menu {
 	list-style-type: none;
 	display: none;
+	margin-left: 2px;
 }
 
 .sub-menu>li>a{
 	display: block;
 	color: #FFF;
+	background-color: #555;
+	padding: 10px 5px;
+	text-decoration: none;
+	text-transform: uppercase;
 }
 
 .main-header {
-	background-color: red;
+	background-color: #F8F8F8;
 	width: 100%;
 	height: 100px;
 }
