@@ -73,6 +73,7 @@ input[name="slider-element"] {
     width: 300%;
     height: 100%;
     transition: all 0.75s ease;
+    animation: autoSlider 15s infinite linear;
 }
 
 .slider-element-one,
@@ -93,4 +94,28 @@ input[name="slider-element"] {
 
 #slider-element-three:checked ~ .slider-container .slider-box {
     margin-left: -200%;
+}
+
+@keyframes autoSlider {
+    0%{
+        margin-left: 0;
+    }
+    30%{
+        margin-left: 0;
+    }
+    35%{
+        margin-left: -100%;
+    }
+    65%{
+        margin-left: -100%;
+    }
+    70%{
+        margin-left: -200%;
+    }
+    90%{
+        margin-left: -200%;
+    }
+    100%{
+        margin-left: 0;
+    }
 }
