@@ -1,9 +1,13 @@
-.slider-container {
-    width: 100%;
-    height: 400px;
+section {
     background-color: #0E8FAB;
     background-image: url('../images/noise.png');
     background-repeat: repeat;
+}
+.slider-container {
+    width: 80%;
+    height: 400px;
+    overflow: hidden;
+    margin: 0 auto;
 }
 
 .border-shadow {
@@ -14,9 +18,8 @@
 }
 
 .slider {
-    margin: 20px 40px;
-    display: block;
     float: left;
+    width: 33.333%;
 }
 
 .slider h2 {
@@ -55,11 +58,39 @@
     line-height: 2;
 }
 
-.slider-img {
-    position: absolute;
-    top: 146px;
-    left: 60%;
+.slider .slider-img {
+    float: right;
     width: 30%;
     height: 256px;
     line-height: 320px;
+}
+
+input[name="slider-element"] {
+    display: none;
+}
+
+.slider-box {
+    width: 300%;
+    height: 100%;
+    transition: all 0.75s ease;
+}
+
+.slider-element-one,
+.slider-element-two,
+.slider-element-3 {
+    min-height: 400px;
+    max-height: 100%;
+    width: 100%;
+}
+
+#slider-element-first:checked ~ .slider-container .slider-box {
+    margin-left: 0;
+}
+
+#slider-element-secound:checked ~ .slider-container .slider-box {
+    margin-left: -100%;
+}
+
+#slider-element-three:checked ~ .slider-container .slider-box {
+    margin-left: -200%;
 }
