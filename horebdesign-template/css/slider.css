@@ -1,4 +1,4 @@
-section {
+.slider-section {
     background-color: #0E8FAB;
     background-image: url('../images/noise.png');
     background-repeat: repeat;
@@ -34,7 +34,7 @@ section {
 }
 
 .slider p {
-    width: 43%;
+    width: 100%;
     color: #FFF;
     font-size: 18px;
     height: 80px;
@@ -65,15 +65,10 @@ section {
     line-height: 320px;
 }
 
-input[name="slider-element"] {
-    display: none;
-}
-
 .slider-box {
     width: 300%;
     height: 100%;
     transition: all 0.75s ease;
-    animation: autoSlider 15s infinite linear;
 }
 
 .slider-element-one,
@@ -84,38 +79,33 @@ input[name="slider-element"] {
     width: 100%;
 }
 
-#slider-element-first:checked ~ .slider-container .slider-box {
-    margin-left: 0;
+.slider-content {
+    width: 43%;
+    float: left;
 }
 
-#slider-element-secound:checked ~ .slider-container .slider-box {
-    margin-left: -100%;
+.buttons-slider-container {
+    position: absolute;
+    top: 500px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
 }
 
-#slider-element-three:checked ~ .slider-container .slider-box {
-    margin-left: -200%;
+.button-slider {
+    width: 16px;
+    height: 16px;
+    background-color: #FFF;
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: 5px;
 }
 
-@keyframes autoSlider {
-    0%{
-        margin-left: 0;
-    }
-    30%{
-        margin-left: 0;
-    }
-    35%{
-        margin-left: -100%;
-    }
-    65%{
-        margin-left: -100%;
-    }
-    70%{
-        margin-left: -200%;
-    }
-    90%{
-        margin-left: -200%;
-    }
-    100%{
-        margin-left: 0;
-    }
+.button-slider:hover {
+    cursor: pointer;
+    background-color: gray;
+}
+
+.button-active {
+    background-color: gray;   
 }
