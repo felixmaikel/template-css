@@ -4,11 +4,6 @@
 	float: left;
 }
 
-.shadow {
-	background: url('../images/sh.png') no-repeat 50% 0;
-	height: 30px;
-}
-
 .presentation {
 	text-align: center;
 	color: #333;

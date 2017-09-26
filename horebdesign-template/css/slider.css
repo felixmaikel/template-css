@@ -10,13 +10,6 @@
     margin: 0 auto;
 }
 
-.border-shadow {
-    width: 100%;
-    background-image: url('../images/shfinal.png');
-    background-repeat: repeat-x;
-    height: 70px;
-}
-
 .slider {
     float: left;
     width: 33.333%;
