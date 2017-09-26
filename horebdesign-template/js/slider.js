@@ -61,4 +61,4 @@ function showVideoSliderAfter() {
 	showVideoSlider(videoIndex);
 }
 
-setInterval("moveSlider()", 2000);
+setInterval("moveSlider()", 3000);
