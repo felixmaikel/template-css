@@ -5,10 +5,10 @@
 .page-text {
     background-color: #f8f8f8;
     width: 100%;
-    height: 300px;
+    height: 100%;
 }
 
-.page-text p {
+.page-text>p {
 	padding-left: 30%;
 	padding-bottom: 12px;
 	font-size: 36px;

@@ -64,3 +64,23 @@ section {
 	background: url('../images/sh.png') no-repeat 50% 0;
 	height: 30px;
 }
+
+.separator {
+	background-image: url('../images/separators.png');
+	width: 95%;
+	margin-left: 20px;
+	margin-top: 10px;
+}
+
+.separator span {
+	font-size: 19px;
+	color: #333;
+	background-color: #f8f8f8;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.page-text .article-container {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
