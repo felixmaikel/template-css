@@ -84,3 +84,9 @@ section {
 	padding-top: 20px;
 	padding-bottom: 20px;
 }
+
+label {
+	color: #333;
+	margin-right: 5px;
+	font-size: 14px;
+}
